@@ -1,0 +1,171 @@
+body { 
+  font-family: 'Alice', serif;
+  font-size: 16px;
+  background: linear-gradient(to bottom, #FCFCF7, #FCF5CF)
+}
+
+#main {
+  width: 62%;
+  margin: 0 auto;
+  padding-top: 2rem;
+  padding-bottom: 6rem;
+}
+
+@media (max-width: 800px) {
+  #main {
+    width: unset;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+#this-is {
+  text-align: center;
+  display: block;
+  letter-spacing: 0.5rem;
+}
+
+#title {
+  font-family: "Dancing Script", serif;
+  font-size: 3rem;
+  text-align: center;
+}
+
+#img-div {
+  position: relative;
+  width: 62%;
+  margin: 0 auto;
+  margin-bottom: 4rem;
+}
+
+@media (max-width: 1300px) {
+  #img-div {
+    width: 100%;
+  }
+}
+
+@media (max-width: 800px) {
+  #img-div {
+    margin-bottom: 2rem;
+  }
+}
+
+#image {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+#image-over-1 {
+  position: absolute;
+  top: 2rem;
+  left: -5rem;
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  
+  animation-name: moveDown;
+  animation-duration: 7s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-out;
+}
+
+#image-over-2-container {
+  position: absolute;
+  bottom: 7rem;
+  right: -4rem;
+  
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  overflow: hidden;
+  
+  animation-name: moveDown;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-out;
+}
+
+#image-over-2 {
+  width: 100%;
+}
+
+@media (max-width: 800px) {
+  #image-over-1 {
+    position: absolute;
+    top: 1.5rem;
+    left: 1rem;
+    animation: none;
+  }
+  
+  #image-over-2-container {
+    position: absolute;
+    top: 13rem;
+    left: 1rem;
+    animation: none;
+  }
+}
+
+
+@media (max-width: 650px) {
+  #image-over-1 {
+    top: 1.5rem;
+    left: 1rem;
+    width: 6rem;
+    height: 6rem;
+  }
+  
+  #image-over-2-container {
+    top: 8rem;;
+    left: 1rem;
+    width: 6rem;
+    height: 6rem;
+  }
+}
+
+@media (max-width: 450px) {
+  #image-over-1 {
+    top: 0.5rem;
+    left: 0.5rem;
+    width: 4rem;
+    height: 4rem;
+  }
+  
+  #image-over-2-container {
+    top: 5rem;
+    left: 0.5rem;
+    width: 4rem;
+    height: 4rem;
+  }
+}
+
+#img-caption {
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+
+#tribute-info {
+  line-height: 2;
+  margin-bottom: 2rem;
+}
+
+#tribute-link {
+  display: block;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+@keyframes moveDown {
+  0% {
+    transform: translateY(0);
+  }
+  
+  50% {
+    transform: translateY(1.5rem);
+  }
+  
+  100% {
+    transform: translateY(0);
+  }
+}
